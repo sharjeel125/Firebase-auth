@@ -16,58 +16,71 @@
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-          apiKey: "AIzaSyAuykjXUc_SNZ94RE7PQ-1-hGA8lsfpRgc",
-          authDomain: "login-signup-5e3bd.firebaseapp.com",
-          projectId: "login-signup-5e3bd",
-          storageBucket: "login-signup-5e3bd.appspot.com",
-          messagingSenderId: "170388005070",
-          appId: "1:170388005070:web:29c1c723fd10cb92d0b09f"
+            apiKey: "AIzaSyAuykjXUc_SNZ94RE7PQ-1-hGA8lsfpRgc",
+            authDomain: "login-signup-5e3bd.firebaseapp.com",
+            projectId: "login-signup-5e3bd",
+            storageBucket: "login-signup-5e3bd.appspot.com",
+            messagingSenderId: "170388005070",
+            appId: "1:170388005070:web:29c1c723fd10cb92d0b09f"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-      </script>
+    </script>
 </head>
 
 <body>
-
     <div style="text-align: center;">
-        <div class="card mb-3" style="max-width: 680px;" id="center">
+        <div class="card mb-3" style="max-width: 600px;" id="center">
             <div class="row g-0" id="main">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg"
                         height="100px">
 
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <h2>Welcome,Back</h2>
-                            <h2>Login</h2>
+                        <h2 class="card-title">Welcome Back</h2>
+                        <h2>Login</h2>
+
                         </h5>
-                        <p class="card-text">
-                        <form onsubmit="return false">
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Enter email" required/>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone
-                                    else.</small>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password" required/>
-                            </div>
-                            <button type="submit" class="btn btn-primary" onClick="onLogin()" id="btn">Login</button>
-                            <div class="justify">
-                                <button type="button" class="btn btn-link"><a href="signup.html">Signup!
-                                    </a></button>
-                                <div class="alert alert-dark" role="alert" id="message"></div>
-                            </div>
-                        </form>
-
                     </div>
+                    <p class="">
+                    <form onsubmit="return false">
+                        <div class="form-group">
+
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Enter email" required />
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
+                            </small>
+                            <div class="form-group">
+                                <label for="password"></label>
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    required />
+                            </div>
+                            <div class="form-group">
+
+
+                                <label><b>Select Your Roll Below<br></br> </b>
+                                    <button type="submit" class="btn btn-primary" onclick="onUserLogin()" id="btn">User Login</button>
+                                    <button type="submit" class="btn btn-primary" onclick="onResLogin()" id="btn">Restaurent Login</button>
+
+                            
+                                </label>
+
+
+                                <div>
+
+                                    
+                                    
+                                <div class="justify">
+                                    <button type="button" class="btn btn-link"><a href="signup.html">Create an account
+                                        </a></button>
+                                    <div class="alert alert-dark" role="alert" id="message"></div>
+                                </div>
+                    </form>
+
                 </div>
             </div>
         </div>

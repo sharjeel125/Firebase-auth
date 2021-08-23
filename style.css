@@ -1,11 +1,13 @@
 body {
-    background: linear-gradient(to left, #efc8ff, #b0abff);
+    background: url("./shawnanggg-nmpW_WwwVSc-unsplash.jpg" );
+
+    /* background: linear-gradient(to left, #efc8ff, #b0abff); */
 }
 
 .page-content {
     width: 100%;
     margin: 0 auto;
-    background: url("53-light-purple-gradient.jpg");
+    /* background: url("53-light-purple-gradient.jpg"); */
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -108,7 +110,7 @@ body {
 }
 
 .form-detail input:focus {
-    border: 1px solid #b3b3b3;
+    border: 1px solid #1c63a5;
 }
 
 .form-detail .register {
